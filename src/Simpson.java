@@ -8,6 +8,14 @@ public class Simpson implements Comparable<Simpson> {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     @Override
     public int compareTo(Simpson simpson) {
         return this.name.compareTo((simpson.name));
@@ -15,6 +23,6 @@ public class Simpson implements Comparable<Simpson> {
 
     @Override
     public String toString(){
-        return "Name = "+name+". ";
+        return "Name = "+name;
     }
 }
